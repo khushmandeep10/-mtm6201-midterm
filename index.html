@@ -14,23 +14,27 @@
 </head>
 
 <body>
-   
+    <div id="skip-links">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <a href="#footer" class="skip-link">Skip to footer</a>
+    </div>
+
     <header class="header-background">
         <div class="logo">
-            <img class="logo1" src="images/logo.jpeg" alt="Little Bee Logo">
+            <img class="logo1" src="images/logo.jpg" alt="Bakery Logo">
         </div> <!-- end logo -->
         <div class="nav-container">
-            <div class="nav-bar">
-                <a href="index.html">Home</a> 
+            <div class="nav-bar" role="navigation">
+                <a href="#main-content" id="main-content">Home</a>
                 <a href="aboutus.html">About</a> 
                 <a href="events.html">Events</a> 
             </div> <!-- nav-barimg -->   
         </div><!-- nav-container -->
     </header>
     
-    <h1>The bee...st bread of town!</h1>
+    <h1>Welcome to the khushmanbeebakery...joy  of our life!</h1>
     <!-- This container to make the style easier -->
-    <div class="container">   
+    <div class="container" aria-label="Main Content">   
         <div class="imageshome">
             <img src="images/bread.jpeg" alt="Bread photo">
             <img src="images/bread.jpeg" alt="Bread photo">
@@ -63,8 +67,9 @@
         </div> <!-- end columns -->    
     </div> <!-- Container -->
 
-    <footer>
-        <p>KhushmanBakery2024®</p>All rights reserved.
+    <footer id="footer" role="contentinfo">
+        <p>KhushmanBakery2024®</p>
+        <p>All rights reserved.</p>
         <span class="material-symbols-outlined">
             bakery_dining
         </span>
